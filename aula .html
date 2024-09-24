@@ -22,7 +22,16 @@
     <p>Apredendo a usar o <strong>DOM</strong></p>
     <diV>Click em misc</diV>
     <Script>
-        window.document.write(window.document.URL)
+
+        //coloca um elemento html dentro de uma variavel
+        let p1 = window.document.getElementtByTagName('p')[0];
+        p1.style.color = 'black';
+        let corpo = window.document.body;
+        corpo.background = 'black';
+
+        //Acessando a arvore dom
+        //window.document.write(window.document.URL);
+
     </Script>
     
 </body>
