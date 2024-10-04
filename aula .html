@@ -20,12 +20,16 @@
     <h1>Iniciando Estudos com DOM</h1>
     <p>Aqui vai um resultado</p>
     <p>Apredendo a usar o <strong>DOM</strong></p>
-    <diV>Click em misc</diV>
+    <diV id = "msg">Click em misc</diV>
     <Script>
 
         //coloca um elemento html dentro de uma variavel
-        let p1 = window.document.getElementtByTagName('p')[0];
+        let p1 = window.document.getElementByTagName('p')[1];//seleção por tag
+        let p2 = window.document.getElementById("msg");
+        
+        p2.style.background = "yellow";
         p1.style.color = 'black';
+
         let corpo = window.document.body;
         corpo.background = 'black';
 
